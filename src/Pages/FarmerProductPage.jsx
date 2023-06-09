@@ -31,7 +31,7 @@ const ProductPage = () => {
     // <div >
          
         <div className='scroll-hori'>
-             {/* <Menu/> */}
+             <Menu/>
         <SelectDropDown selectItems={selectItems} selectedOption={selectedOption} setselectedOption={setselectedOption}/> 
         <ProductCarts food={garri}/>
         <ProductCarts food={egusi}/>

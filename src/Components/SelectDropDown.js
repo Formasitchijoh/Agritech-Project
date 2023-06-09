@@ -2,16 +2,10 @@ import React from 'react'
 import { useState } from 'react'
 import Select from 'react-select';
 import '../style.css'
-const SelectDropDown = ({selectItems, setselectedOption,selectedOption}) => {
-    // const [selectedOption, setselectedOption] = useState(null)
+const SelectDropDown = ({selectItems,selectedOption,handleChange}) => {
     const filterOptions = (option, inputValue) => {
         return option.data.text.toLowerCase().includes(inputValue.toLowerCase());
     }
-    const handleChange = e => {
-        setselectedOption(e);
-    }
-
-
   return (
     <div style={{ width:'90%'}}> 
       <Select
@@ -23,17 +17,16 @@ const SelectDropDown = ({selectItems, setselectedOption,selectedOption}) => {
       getOptionLabel={e => (
         <div
         
-        //  style={{display:'flex',alignItems:'center',width:'2em',lineHeight:'2em'}}
         >
             {e.icon}
-            <span style={{marginLeft:5}}>{e.text}</span>
+            <span style={{marginLeft:5}}>{e.category}</span>
         </div>
       )} 
 
-      filterOption={filterOptions}
+      // filterOption={filterOptions}
       />
       {selectedOption && <div style={{marginTop:20,lineHeight:'25px'}}>
-        <b>Selected Option:</b>{selectedOption.value}
+        <b>Selected Option:</b>{selectedOption.id}
         </div>}
     </div>
   )

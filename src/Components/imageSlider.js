@@ -42,10 +42,10 @@ const ImageSlider = () =>{
         <div >
         <h1>My Products</h1>
             <Slider {...settings}>
-                {/* <ProductCart className="item" food={garri}/>
+                <ProductCart className="item" food={garri}/>
                 <ProductCart className="item" food={egusi}/>
                 <ProductCart className="item" food={plantain}/>
-                <ProductCart className="item" food={yam}/> */}
+                <ProductCart className="item" food={yam}/>
 
             </Slider>
         </div>

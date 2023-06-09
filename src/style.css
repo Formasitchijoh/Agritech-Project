@@ -18,7 +18,7 @@ body{
     margin-top: 1em;
   }
   .cartContainer img{
-    margin-top: -.5em;
+    margin-top: 0.5em;
     width: 100%;
     height: 8em;
     border-radius: 1em;
@@ -29,18 +29,20 @@ body{
     text-decoration: none;
   }
   
-  .hamburger {
+  .hamburger { 
+    list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 20px;
     cursor: pointer;
-    /* margin-top: 1em; */
+    margin-top: 0.5em;
     padding: 1em;
+    
   }
   .hamburger-menu{
-    width: 100%;
+    width: 24em;
     height: 5em;
     background-color: #024A09;
     border-top-left-radius: 0.7em;
@@ -48,9 +50,10 @@ body{
   }
   
   .hamburger-line {
-    width: 100%;
-    height: 2px;
-    background-color: black;
+    text-decoration: none;
+    width:2em;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
     transition: all 0.3s ease-in-out;
   }
   
@@ -64,7 +67,8 @@ body{
     background-color: white;
     padding: 20px;
     box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.25);
-    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
     text-align: start;
     font-size: 2em;
     font-weight: 400;
